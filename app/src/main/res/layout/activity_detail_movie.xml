@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#fbe9e7"
+    android:id="@+id/activity_detail_movie"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailMovieActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:id="@+id/img_poster"
+                android:scaleType="fitXY"
+                tools:src="@color/colorAccent"/>
+        </FrameLayout>
+        <TextView
+            style="@style/TextContent.Black"
+            android:textSize="32sp"
+            android:id="@+id/txt_title"
+            android:text="@string/title_movies"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="8dp"/>
+        <TextView
+            style="@style/TextContent.Subtitle"
+            android:id="@+id/tv_remark"
+            android:text="@string/strip"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+        <TextView
+            style="@style/TextContent"
+            android:id="@+id/txt_description"
+            android:text="@string/lorem"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:lineSpacingMultiplier="1"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/watch_trailer"
+            android:theme="@style/btnWatch"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+    </LinearLayout>
+</ScrollView>
